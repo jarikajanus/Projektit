@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="LomakeStyle.css">
+<head>
+</head>
+<main>
+    <script type="text/javascript" src="JS_Funktiot2.js"></script>
+    <!-- action="/Pr2v.html" id="Kyselylomake" -->
+    <form method="post" action="/Pr2v.html" onSubmit="return Laheta(this)"><br>
+        <table id="kysely" name="kysely">
+            <tr id="otsikko">
+                <td>
+                    <h1>Kyselylomake</h1>
+                </td>
+            </tr>
+            <tr id="nimi"></tr>
+                <td>
+                Nimi:<br>
+                <input type="text" name="nimi" id="nimi" size="40" placeholder="Kirjoita nimesi"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Sähköposti:<br>
+                <input type="text" name="email" id="email" size="40" placeholder="Kirjoita s-postiosoitteesi"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Ikä:<br>
+                <input type="text" name="ika" id="ika" min="18" max="55" size="40"
+                    placeholder="Kirjoita ikäsi (oltava väliltä 18 - 55)"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Mihin ikäryhmään kuulut?<br>
+                <select name="ikaryhma" id="ikaryhma">
+                    <option id="5">... valitse ...</option>
+                    <option id="6">18 - 30</option>
+                    <option id="7">31 - 40</option>
+                    <option id="8">41 - 50</option>
+                    <option id="9">51 - 55</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Suosittelisitko Keudaa ystävillesi?<br>
+                <input type="radio" name="suosittelu" id="suosittelu.K">Kyllä<br>
+                <input type="radio" name="suosittelu" id="suosittelu.E">En<br>
+                <input type="radio" name="suosittelu" id="suosittelu.EOS">En osaa sanoa<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Parasta Keudassa on:<br>
+                <input type="checkbox" name="amma" id="amma">Ammattiaineet<br>
+                <input type="checkbox" name="yto" id="yto">YTO-aineet<br>
+                <input type="checkbox" name="ruoka" id="ruoka">Ruokatunti<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Mikä on lempiaineesi Keudassa?<br>
+                <select name="lemppari" id="lemppari">
+                    <option id="0">... valitse ...</option>
+                    <option id="1">Java -ohjelmointi</option>
+                    <option id="2">HTML -ohjelmointi</option>
+                    <option id="3">Javascript -ohjelmointi</option>
+                    <option id="4">C / C++ -ohjelmointi</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Kerro miten kehittäisit opetusta Keudassa.<br>
+                <textarea name="kehitys" id="kehitys" cols="40" rows="5" 
+                    placeholder="Älä ujostele kertoa mielipidettäsi..."
+                    onFocus="return Tarkistamerkit(this.form)" 
+                    onKeyDown="return Tarkistamerkit(this.form)" 
+                    onKeyUp="return Tarkistamerkit(this.form)" 
+                    onblur="return Tarkistamerkit(this.form)"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="Merkkejajaljella" type="text" readonly="readonly" id="Merkkajajaljella" value="500" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <input type="submit" value="Lähetä" name="submit" id="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</main>
+</body>
+</html>

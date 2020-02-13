@@ -1,0 +1,86 @@
+/* Säilytä otsikot, jotka matchaavat HTML tiedostoa ja poista loput, joita ei tarvita. Esim. Footer ja Nav. */
+/* Muokatkaa color # koodit haluamanne mukaan */
+/* Muokatkaa eri osioiden pituuksia pikseleiden mukaan ja testatkaa HTML tiedoston kanssa pituuksia ja leveyksiä. */
+/* # Color koodi generaattoreita löytyy sivulta: htmlcolorcodes.com/resources/best-color-palette-generators */
+/* Lataa taustakuvan tiedosto koneelle ja kirjoita background-image sulkujen sisään tiedoston nimi, kuten esimerkkinä on. */
+/* Kuvan voitte vaihtaa haluamanne mukaan */
+
+body {
+  background: #ffffff  no-repeat right top url("maisema.jpg");
+}
+
+header
+{
+height: 116px;
+width: 400px;
+background: #486CA0;
+}
+
+h1
+{
+  color: rgb(108, 135, 172);
+  padding: 22px 0 0 20px;
+}
+form{ padding: 15px 15px 15px 15px;
+}
+
+#labelboxi
+{
+  height: 5px;
+  width: 3px;
+}
+label
+{
+  display: inline-block;
+  width: 110px;
+}
+.textbox
+{
+  width: 220px;
+}
+/*.textbox1
+{
+  width:220px;
+  height:150px;
+}dropdown valikon laatikko jotenkin näin mutta kaikille optioille  */
+body
+{
+  background-image: url("CoolCat2.jpg");
+  background-color: lightblue;
+}
+
+
+section
+{
+  width: 400px;
+  height: 800px;
+  background: #AABAD1;
+  margin-top; -20px;
+  margin: auto;
+
+}
+h2
+{
+  color: #000;
+  padding: 10 px 0 0 10px;
+}
+article p
+{
+  padding: 10px;
+}
+
+h3
+{
+  color: #fff;
+  padding: 10px 0 0 10px;
+}
+footer
+{
+  height: 50px;
+  background: #486CA0;
+  margin-top: -16px;
+}
+footer p
+{
+  padding: 10px 0 0 10px;
+}

@@ -1,0 +1,21 @@
+html {
+    background-image: maisema.jpg;
+}
+
+body {
+    width: 20em;
+    padding: 5em;
+    background-image: maisema.jpg;
+}
+
+main {
+    background-color: rgb(82, 107, 131);
+    font: 1em sans-serif;
+    color: rgb(95, 16, 16);
+}
+
+h1 {
+    font: 3em sans-serif;
+    color: rgb(34, 17, 17);
+    background-color: rgb(148, 140, 155);
+}
